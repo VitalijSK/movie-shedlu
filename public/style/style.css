@@ -1,0 +1,155 @@
+html, body{
+	margin: 0;
+	padding:0;
+	overflow-x:hidden;
+}
+a{
+	text-decoration:none;
+}
+h1{
+		text-align:center;
+}
+/*
+-------HEADER-------	
+*/
+header {
+	background-color:#000;
+}
+header nav{
+	display: grid;
+    grid-template-columns: auto auto auto 1fr;
+}
+header nav>ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+header nav>ul>li{
+	display: inline;
+}
+header nav>ul>li>a{
+	color:#fff;
+	font-size:18pt;
+}
+.profile button{
+	float: right;
+		color:#fff;
+	font-size:22pt;
+    padding:0 10px;
+    border:none;
+    cursor: pointer;
+    background: none;
+	    margin-top: -6px;
+    height: 38px;
+}
+.profile button:first-child{
+	border-left: 6px solid #b10000;
+
+}
+.mobile-menu__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  transition: .4s;
+}
+.mobile-menu__icon {
+  display: block;
+  position: relative;
+  background: white;
+  width: 90%;
+  height: 4px;
+  transition: .4s;
+}
+.mobile-menu__icon::after, .mobile-menu__icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 4px;
+  transition: .4s;
+}
+.mobile-menu__icon::after {
+  top: 8px;
+}
+.mobile-menu__icon::before {
+  top: -8px;
+}
+.mobile-menu__cont {
+  overflow: hidden;
+	margin-top: -17px;
+
+}
+.mobile-menu__list {
+  transition: margin-left .8s;
+  transition-delay:margin-left .8s;
+  list-style: none;
+  padding-lefT: 0;
+  margin-left: -100%;
+}
+.mobile-menu__item {
+  font-size: 26px;
+  display: inline;
+}
+.mobile-menu__link {
+  color: #fff;
+      padding: 0px 14px;
+}
+.mobile-menu__item:nth-child(odd) a{
+	color: #b10000;
+}
+.mobile-menu__checkbox {
+  display: none;
+}
+.mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+  opacity: 1;
+  transition-delay: 0s;
+}
+.mobile-menu__checkbox:checked ~ .mobile-menu__cont .mobile-menu__list {
+        margin-left: 13px;
+}
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+  background: transparent;
+}
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+  top: 0;
+}
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.mobile-menu__logo{
+	color:#fff;
+	font-size:22pt;
+	margin-top: -2px;
+}
+.mobile-menu__city{
+	border:none;
+	border-left: 6px solid #b10000;
+	background:none;
+	margin-left:6px;
+	color:#fff;
+	margin-top: -2px;
+	font-size:22pt;
+	height: 34px;
+	cursor:pointer;
+}
+.wrapper_menu{
+	width:100vw;
+	max-width:1200px;
+	margin:0 auto;
+	display:grid;
+	grid-template-columns: auto auto;
+	padding: 30px 30px 15px 30px;
+}
+/*
+-------MAIN-------	
+*/
